@@ -3,7 +3,7 @@
     "offlinePort":9010,
     "port": 8091,
     "mysql" : {
-        "url" : "mysql://root:yuetu@192.168.10.129:3306/badjs"
+        "url" : "mysql://root:root@192.168.10.1:3306/badjs"
     },
     "storage" : {
         "errorMsgTopUrl" : "http://127.0.0.1:9003/errorMsgTop",
