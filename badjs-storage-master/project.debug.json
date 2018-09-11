@@ -1,7 +1,7 @@
 {
     "mongodb" : {
-        "url" : "mongodb://192.168.10.129:27017/badjs",
-        "adminUrl" : "mongodb://192.168.10.129:27017/admin",
+        "url" : "mongodb://192.168.10.1:27017/badjs",
+        "adminUrl" : "mongodb://192.168.10.1:27017/admin",
         "isShard" : false,
         "limit": 500
     },
