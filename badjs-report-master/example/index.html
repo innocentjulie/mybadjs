@@ -1,0 +1,53 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>example</title>
+    <script src="../src/bj-report.js"></script>
+    <script src="../src/bj-wrap.js"></script>
+    <script src="../node_modules/requirejs/require.js"></script>
+</head>
+<body>
+    <script>
+
+//        //初始化
+//        BJ_REPORT.init({id: 4  , uin : 9527, random: 1 , url:"http://127.0.0.1:8090/badjs"});
+//
+////        BJ_REPORT.report({
+////            msg: "xx load error",                 // 错误信息
+////            target: "xxx.js",                     // 错误的来源js
+////            rowNum: 100,                          // 错误的行数
+////            colNum: 100,                          // 错误的列数
+////        });
+//        //主动上报错误日志
+//        BJ_REPORT.report("error msg 2");
+//
+//        //info上报，用于记录操作日志
+//        BJ_REPORT.info("info");
+//
+//        //可以结合实时上报，跟踪问题; 不存入存储
+//        BJ_REPORT.debug("debug");
+//
+//        //记录离线日志
+//        BJ_REPORT.offlineLog("offlineLog");
+
+    BJ_REPORT.init({id: 4  , uin : 9528, random: 1 , url:"http://127.0.0.1:8090/badjs"});
+
+    BJ_REPORT.tryJs().spyAll();
+    //主动上报错误日志
+    BJ_REPORT.report("终于成功了");
+
+    //info上报，用于记录操作日志
+    BJ_REPORT.info("info");
+
+    //可以结合实时上报，跟踪问题; 不存入存储
+    BJ_REPORT.debug("debug");
+
+
+    //记录离线日志
+    BJ_REPORT.offlineLog("offlineLog");
+    var  mm=1/0;
+    var a=b;
+    </script>
+</body>
+</html>

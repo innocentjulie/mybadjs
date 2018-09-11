@@ -1,0 +1,34 @@
+{
+    "host" : "http://badjs.server.com/",
+    "offlinePort":9010,
+    "port": 8091,
+    "mysql" : {
+        "url" : "mysql://root:yuetu@192.168.10.129:3306/badjs"
+    },
+    "storage" : {
+        "errorMsgTopUrl" : "http://127.0.0.1:9003/errorMsgTop",
+        "queryUrl" : "http://127.0.0.1:9003/query"
+    },
+    "acceptor": {
+        "pushProjectUrl" : "http://127.0.0.1:9020/getProjects"
+    },
+    "openapi": {
+        "pushProjectUrl" : "http://127.0.0.1:9002/getProjects"
+    },
+    "mq": {
+        "url": "tcp://127.0.0.1:10000",
+        "subscribe": "badjs",
+        "module": "axon"
+    },
+    "email": {
+        "homepage": "http://badjs.server.com/user/index.html",
+        "from": "noreply-badjs@demo.com",
+        "emailSuffix" : "@demo.com",
+        "smtp": "smtp.demo.com",
+        "smtpUser":   "username",
+        "smtpPassword":"password",
+        "time": "09:00:00",
+        "top": 20,
+        "module": "email"
+    }
+}

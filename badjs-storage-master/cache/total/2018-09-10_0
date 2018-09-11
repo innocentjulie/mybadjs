@@ -1,0 +1,1 @@
+{"4":{"total":5,"errorMap":{"be0296db6da7dfdda96a52a8b72f2e74":{"total":1,"msg":"error msg 2"},"9d31b0f2f35dd414a582397536ff0653":{"total":2,"msg":"终于成功了"},"18ce3e949ac158e31d135a3e33e3da70":{"total":2,"msg":"Uncaught ReferenceError: b is not defined"}}},"total":4}
